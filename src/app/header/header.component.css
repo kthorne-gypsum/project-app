@@ -1,0 +1,19 @@
+/*.container{
+  padding: 30px;
+  margin: 5px;
+  width: auto;
+  height: auto;
+}
+.row {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h2 {
+  background-color: deepskyblue;
+  text-align: center;
+  width: auto;
+  height: auto;
+}*/
