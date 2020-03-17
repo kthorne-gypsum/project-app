@@ -23,6 +23,9 @@ private subscription: Subscription;
 /*onIngredientAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
 }*/
+onEditItem(index: number) {
+  this.slService.startedEditing.next(index);
+}
 ngOnDestroy(): void {
   this.subscription.unsubscribe();
 }
