@@ -44,10 +44,21 @@ onAddItem(form: NgForm) {
     } else {
       this.slService.addIngredient(newIngredient);
     }
+    this.editMode = false;
+    form.reset();
 
     // const ingName = this.nameInputRef.nativeElement.value;
     // const ingAmount = this.amountInputRef.nativeElement.value;
     /*this.ingredientAdded.emit(newIngredient);*/
+  }
+  onClear() {
+    this.slForm.reset();
+    this.editMode = false;
+  }
+  onDelete() {
+    this.slService.deleteIngredient(this.editedItemIndex);
+    this.onClear();
+
   }
 
 ngOnDestroy() {
